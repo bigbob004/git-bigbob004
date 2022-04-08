@@ -1,0 +1,13 @@
+digraph {
+  rankdir=LR;
+  node [shape = none, label=""]; q0;
+  node [shape = circle, label="s1"]; s1;
+  node [shape = circle, label="q1"]; q1;
+  node [shape = circle, label="t1"]; t1;
+  node [shape = doublecircle, label="k1"]; k1;
+  q0 -> s1 [label = ""];
+  s1 -> q1 [label = "a, b"];
+  q1 -> t1 [label = "a, b"];
+  t1 -> k1 [label = "a, b"];
+  k1 -> k1 [label = "a, b"]
+}
